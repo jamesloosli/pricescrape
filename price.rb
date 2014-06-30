@@ -45,9 +45,7 @@ end
 def jenson_link(link)
   page = RestClient.get link
   x = Nokogiri::HTML.parse(page)
-  p x
-  price = x.xpath('//span[@class = "product-price-adjdefprice price-hideiso"]/span[@class = "Amount"]')
-  p price
+  price = x.xpath('//span[@itemprop = "price"]/span[@class = "Amount"]')
   return price
 end
 
