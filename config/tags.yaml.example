@@ -1,1 +1,1 @@
-jensonusa: '//span[@itemprop = "price"]/span[@class = "Amount"]'
+jensonusa: '//span[@itemprop = "price"]/span[@class = "Amount"]/text()'
